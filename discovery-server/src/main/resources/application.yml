@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    proxy-user-name: ${EUREKA_USERNAME:eureka}
+    proxy-password: ${EUREKA_PASSWORD:password}
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: eureka-registry
